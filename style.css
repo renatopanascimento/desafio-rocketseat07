@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+
+  display: grid;
+  place-content: center;
+
+  height: 100vh;
+}
+
+.screen1,
+.screen2 {
+  width: 30rem;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  color: #34355b;
+}
+
+p,
+button {
+  font-family: "DM Sans", sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.card {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 4.8rem 6.4rem;
+  text-align: center;
+
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+
+  margin-top: -12rem;
+}
+
+.screen1 p {
+  font-size: 1.5rem;
+  color: #34355b;
+
+  margin-block: 2rem;
+}
+
+.screen1 button {
+  background: none;
+  border: none;
+}
+
+.screen1 img:hover {
+  cursor: pointer;
+  animation: tremor 0.3s infinite;
+}
+
+.screen2 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.7rem;
+}
+
+.screen2 form p {
+  background: #e4edf1;
+  font-family: "Dancing Script", cursive;
+  padding: 1rem;
+
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+
+  font-size: 2.4rem;
+}
+
+.screen2 button {
+  background: #ff9500;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+@keyframes tremor {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  25% {
+    transform: translate(-2px, -2px) rotate(-2deg);
+  }
+  50% {
+    transform: translate(2px, 2px) rotate(2deg);
+  }
+  75% {
+    transform: translate(-2px, 2px) rotate(-2deg);
+  }
+  100% {
+    transform: translate(2px, -2px) rotate(2deg);
+  }
+}
